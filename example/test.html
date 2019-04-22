@@ -2,10 +2,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>example</title>
 	</head>
 	<body>
-		<p>test</p>
+		<p>example1234</p>
 		<script src="../release/bundel.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var FC = window.FastCache;
+			var cache = new FC();
+			cache.set('a',32562);
+			console.log(cache.get('a'));
+		</script>
 	</body>
 </html>
